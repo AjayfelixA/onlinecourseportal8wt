@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enrollments | EduVerse College</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><i class="fa-solid fa-graduation-cap"></i> EduVerse College</div>
+      <nav>
+        <a href="index.html">Courses</a>
+        <a href="enrollments.html" class="active">Enrollments</a>
+      </nav>
+    </div>
+    <h1>Enrollments Overview</h1>
+  </header>
+
+  <main class="container">
+    <div class="enrollment card">
+      <h2>Enroll in a Course</h2>
+      <select id="courseSelect"></select>
+      <input id="studentName" placeholder="Student Name">
+      <input id="studentEmail" placeholder="Student Email">
+      <button id="enrollBtn">Enroll</button>
+
+      <h3>All Enrollments</h3>
+      <ul id="enrollmentList"></ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 EduVerse College | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a2e0f2b1b6.js" crossorigin="anonymous"></script>
+  <script src="enrollments.js"></script>
+</body>
+</html>

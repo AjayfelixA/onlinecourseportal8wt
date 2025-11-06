@@ -1,0 +1,161 @@
+/* 🌈 Base Styles */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #e3f2fd, #e1f5fe, #fce4ec);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🎓 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* 🏫 Header Banner */
+header h1 {
+  text-align: center;
+  color: #003c8f;
+  margin-top: 2rem;
+  font-size: 2.2rem;
+}
+
+header p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* 📘 Main Section */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* 🧾 Card Design */
+.card {
+  background: white;
+  width: 420px;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+  color: #1976d2;
+  border-bottom: 3px solid #90caf9;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: #0288d1;
+  margin-top: 1.5rem;
+}
+
+/* 🧠 Form Elements */
+input, textarea, select, button {
+  width: 100%;
+  margin: 0.6rem 0;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+button {
+  background: linear-gradient(135deg, #0078d7, #005fa3);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #005fa3, #003c73);
+  transform: scale(1.04);
+}
+
+/* 📋 Lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f1f8ff;
+  margin: 0.4rem 0;
+  padding: 0.6rem 0.8rem;
+  border-left: 5px solid #2196f3;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+ul li:hover {
+  background: #e3f2fd;
+}
+
+/* 📱 Responsive Layout */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+}
+
+/* 🦶 Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #003c8f;
+  color: white;
+  margin-top: 2rem;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.15);
+}

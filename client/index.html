@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Courses | EduVerse College</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><i class="fa-solid fa-graduation-cap"></i> EduVerse College</div>
+      <nav>
+        <a href="index.html" class="active">Courses</a>
+        <a href="enrollments.html">Enrollments</a>
+      </nav>
+    </div>
+    <h1>Available Courses</h1>
+  </header>
+
+  <main class="container">
+    <div class="courses card">
+      <h2>Our Courses</h2>
+      <ul id="courseList"></ul>
+
+      <h3>Add New Course</h3>
+      <input id="title" placeholder="Course Title">
+      <textarea id="description" placeholder="Description"></textarea>
+      <input id="instructor" placeholder="Instructor Name (comma-separated if multiple)">
+      <button id="addCourseBtn">Add Course</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 EduVerse College | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a2e0f2b1b6.js" crossorigin="anonymous"></script>
+  <script src="courses.js"></script>
+</body>
+</html>
