@@ -159,3 +159,93 @@ footer {
   margin-top: 2rem;
   box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.15);
 }
+
+
+/* ================================================== */
+/* ✅ Login & Register Styling — MERGED BELOW */
+/* ================================================== */
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 1rem;
+}
+
+.auth-box {
+  background: #ffffff;
+  width: 420px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.auth-box h2 {
+  color: #0052d4;
+  margin-bottom: 1.3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Inputs */
+.auth-box input {
+  width: 100%;
+  margin: 0.6rem 0;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #b5c6ff;
+  border-radius: 8px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-box input:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 6px rgba(25, 118, 210, 0.35);
+}
+
+/* Buttons */
+.auth-btn {
+  background: linear-gradient(135deg, #0078d7, #005fa3);
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.auth-btn:hover {
+  background: linear-gradient(135deg, #005fa3, #003c73);
+  transform: scale(1.03);
+}
+
+/* Small Links */
+.auth-text {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.auth-text a {
+  color: #0052d4;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.auth-text a:hover {
+  color: #002b76;
+  text-decoration: underline;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
