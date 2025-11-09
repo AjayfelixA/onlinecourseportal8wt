@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api/auth";
+const API_BASE = "https://onlinecourse-backend-ccmw.onrender.com/api";
 
 async function register() {
   const name = document.getElementById("name").value.trim();

@@ -1,8 +1,13 @@
-const API_BASE = "http://localhost:5000/api/auth";
+const API_BASE = "https://onlinecourse-backend-ccmw.onrender.com/api/auth";
 
 async function login() {
   const username = document.getElementById("username").value.trim();
   const password = document.getElementById("password").value.trim();
+
+  if (!username || !password) {
+    alert("Please enter both username and password");
+    return;
+  }
 
   try {
     let res = await fetch(`${API_BASE}/login`, {
@@ -14,14 +19,17 @@ async function login() {
     res = await res.json();
 
     if (res.success) {
-      alert("Login successful");
+      alert("✅ Login successful");
       localStorage.setItem("user", JSON.stringify(res.user));
       window.location.href = "index.html";
     } else {
-      alert(res.message);
+      alert(res.message || "Login failed");
     }
   } catch (err) {
-    alert("Server not reachable");
+    alert("❌ Server not reachable");
+    console.log(err);
   }
 }
-document.getElementById("loginBtn").onclick = login;
+
+// Attach button click
+document.getElementById("loginBtn").addEventListener("click", login);
